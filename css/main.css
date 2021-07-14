@@ -872,6 +872,20 @@ pre[class*='highlight'] {
   justify-content: center;
   align-items: center;
 }
+.footer-link {
+  margin-right: 10px;
+}
+.fb-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.gh-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
 .BbeiAn-info {
   display: flex;
   justify-content: center;
