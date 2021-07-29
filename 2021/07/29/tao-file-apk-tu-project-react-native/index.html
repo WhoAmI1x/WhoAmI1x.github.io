@@ -18,12 +18,12 @@
   <link 
     rel="icon" 
     href="https://assets.weforum.org/project/image/4u9vCs3EU1IlaBFve2rBz99j8srI59vQ06jhzW-6d2I.jpeg">
-  <title>Tạo file apk từ project React Native</title>
+  <title>Tạo file apk từ project React Native (Phần 1)</title>
   
     
       <meta 
         property="og:title" 
-        content="Tạo file apk từ project React Native">
+        content="Tạo file apk từ project React Native (Phần 1)">
     
     
       <meta 
@@ -251,7 +251,7 @@
     <article class="card card-content">
       <header>
         <p class="post-title">
-          Tạo file apk từ project React Native
+          Tạo file apk từ project React Native (Phần 1)
         </p>
       </header>
       <div class="post-meta post-show-meta">
@@ -266,7 +266,7 @@
                 
                   <span class="dot"></span>
                   <span>
-                    348
+                    379
                       words
                   </span>
                   
@@ -299,11 +299,12 @@
 <h1 id="4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><a href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky" class="headerlink" title="4. Sửa file [project của bạn]/android/app/build.gradle và thêm thiết lập chữ ký"></a>4. Sửa file [project của bạn]/android/app/build.gradle và thêm thiết lập chữ ký</h1><p>Tiến hành thêm các phần code dưới đây vào file <strong>[project của bạn]/android/app/build.gradle</strong> để được giống như sau:</p>
 <pre class="highlight"><span class="line">...</span><br><span class="line">android &#123;</span><br><span class="line">    ...</span><br><span class="line">    defaultConfig &#123; ... &#125;</span><br><span class="line">    signingConfigs &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            if (project.hasProperty(&#x27;MYAPP_UPLOAD_STORE_FILE&#x27;)) &#123;</span><br><span class="line">                storeFile file(MYAPP_UPLOAD_STORE_FILE)</span><br><span class="line">                storePassword MYAPP_UPLOAD_STORE_PASSWORD</span><br><span class="line">                keyAlias MYAPP_UPLOAD_KEY_ALIAS</span><br><span class="line">                keyPassword MYAPP_UPLOAD_KEY_PASSWORD</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            ...</span><br><span class="line">            signingConfig signingConfigs.release</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br></pre>
 
-<h1 id="5-Tien-hanh-tao-file-apk"><a href="#5-Tien-hanh-tao-file-apk" class="headerlink" title="5. Tiến hành tạo file .apk"></a>5. Tiến hành tạo file .apk</h1><p>Thực hiện câu lệnh sau trong thư mục project của bạn:</p>
+<h1 id="5-Tien-hanh-tao-file-aab"><a href="#5-Tien-hanh-tao-file-aab" class="headerlink" title="5. Tiến hành tạo file .aab"></a>5. Tiến hành tạo file .aab</h1><p>Thực hiện câu lệnh sau trên <strong>Command Prompt</strong> trong thư mục project của bạn:</p>
 <blockquote>
-<p>cd android &amp;&amp; ./gradlew bundleRelease</p>
+<p>cd android &amp;&amp; gradlew bundleRelease</p>
 </blockquote>
-<p>Và cuối cùng bạn đã sinh được ra file <strong>.apk</strong>, file này được đặt ở trong thư mục sau: <strong>android/app/build/outputs/bundle/release/</strong></p>
+<p>Và cuối cùng bạn đã sinh được ra file <strong>.aab</strong>, file này được đặt ở trong thư mục sau: <strong>android/app/build/outputs/bundle/release/</strong></p>
+<p><strong>Kết:</strong> Trong phần tiếp theo chúng ta sẽ tiến hành tạo file <strong>.apk</strong> từ file <strong>.aab</strong> vừa rồi!</p>
 
           </div>
           <!-- <div>
@@ -354,7 +355,7 @@
     style="padding-right: 2px;">
   </i>TOC
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Tao-file-my-upload-key-keystore"><span class="toc-text">1. Tạo file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Dung-file-my-upload-key-keystore"><span class="toc-text">2. Dùng file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties"><span class="toc-text">3. Thêm code sau vào file [project của bạn]&#x2F;android&#x2F;gradle.properties</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><span class="toc-text">4. Sửa file [project của bạn]&#x2F;android&#x2F;app&#x2F;build.gradle và thêm thiết lập chữ ký</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Tien-hanh-tao-file-apk"><span class="toc-text">5. Tiến hành tạo file .apk</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Tao-file-my-upload-key-keystore"><span class="toc-text">1. Tạo file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Dung-file-my-upload-key-keystore"><span class="toc-text">2. Dùng file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties"><span class="toc-text">3. Thêm code sau vào file [project của bạn]&#x2F;android&#x2F;gradle.properties</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><span class="toc-text">4. Sửa file [project của bạn]&#x2F;android&#x2F;app&#x2F;build.gradle và thêm thiết lập chữ ký</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Tien-hanh-tao-file-aab"><span class="toc-text">5. Tiến hành tạo file .aab</span></a></li></ol>
           </div>
                     </main>
                     <aside class="left-column">
@@ -402,7 +403,7 @@
     style="padding-right: 2px;">
   </i>TOC
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Tao-file-my-upload-key-keystore"><span class="toc-text">1. Tạo file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Dung-file-my-upload-key-keystore"><span class="toc-text">2. Dùng file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties"><span class="toc-text">3. Thêm code sau vào file [project của bạn]&#x2F;android&#x2F;gradle.properties</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><span class="toc-text">4. Sửa file [project của bạn]&#x2F;android&#x2F;app&#x2F;build.gradle và thêm thiết lập chữ ký</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Tien-hanh-tao-file-apk"><span class="toc-text">5. Tiến hành tạo file .apk</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Tao-file-my-upload-key-keystore"><span class="toc-text">1. Tạo file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Dung-file-my-upload-key-keystore"><span class="toc-text">2. Dùng file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties"><span class="toc-text">3. Thêm code sau vào file [project của bạn]&#x2F;android&#x2F;gradle.properties</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><span class="toc-text">4. Sửa file [project của bạn]&#x2F;android&#x2F;app&#x2F;build.gradle và thêm thiết lập chữ ký</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Tien-hanh-tao-file-aab"><span class="toc-text">5. Tiến hành tạo file .aab</span></a></li></ol>
       </div>
     </article>
   
@@ -467,7 +468,7 @@
     style="padding-right: 2px;">
   </i>TOC
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Tao-file-my-upload-key-keystore"><span class="toc-text">1. Tạo file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Dung-file-my-upload-key-keystore"><span class="toc-text">2. Dùng file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties"><span class="toc-text">3. Thêm code sau vào file [project của bạn]&#x2F;android&#x2F;gradle.properties</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><span class="toc-text">4. Sửa file [project của bạn]&#x2F;android&#x2F;app&#x2F;build.gradle và thêm thiết lập chữ ký</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Tien-hanh-tao-file-apk"><span class="toc-text">5. Tiến hành tạo file .apk</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Tao-file-my-upload-key-keystore"><span class="toc-text">1. Tạo file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Dung-file-my-upload-key-keystore"><span class="toc-text">2. Dùng file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties"><span class="toc-text">3. Thêm code sau vào file [project của bạn]&#x2F;android&#x2F;gradle.properties</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><span class="toc-text">4. Sửa file [project của bạn]&#x2F;android&#x2F;app&#x2F;build.gradle và thêm thiết lập chữ ký</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Tien-hanh-tao-file-aab"><span class="toc-text">5. Tiến hành tạo file .aab</span></a></li></ol>
     </article>
   
   
@@ -483,7 +484,7 @@
     
       <div class="recent-posts-item">
         <div class="recent-posts-item-title">2021-07-29</div>
-        <a href="/2021/07/29/tao-file-apk-tu-project-react-native/"><div class="recent-posts-item-content">Tạo file apk từ project React Native</div></a>
+        <a href="/2021/07/29/tao-file-apk-tu-project-react-native/"><div class="recent-posts-item-content">Tạo file apk từ project React Native (Phần 1)</div></a>
       </div>
     
       <div class="recent-posts-item">
