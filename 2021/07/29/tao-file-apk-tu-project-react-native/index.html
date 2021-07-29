@@ -18,17 +18,17 @@
   <link 
     rel="icon" 
     href="https://assets.weforum.org/project/image/4u9vCs3EU1IlaBFve2rBz99j8srI59vQ06jhzW-6d2I.jpeg">
-  <title>Tôi đã tạo blog như thế nào</title>
+  <title>Tạo file apk từ project React Native</title>
   
     
       <meta 
         property="og:title" 
-        content="Tôi đã tạo blog như thế nào">
+        content="Tạo file apk từ project React Native">
     
     
       <meta 
         property="og:url" 
-        content="http://example.com/2021/07/14/toi-da-tao-blog-nhu-the-nao-p1/index.html">
+        content="http://example.com/2021/07/29/tao-file-apk-tu-project-react-native/index.html">
     
     
       <meta 
@@ -42,10 +42,10 @@
         content="article">
       <meta 
         property="og:article:published_time" 
-        content="2021-07-14">
+        content="2021-07-29">
       <meta 
         property="og:article:modified_time" 
-        content="2021-07-14">
+        content="2021-07-29">
       <meta 
         property="og:article:author" 
         content="Who Am I">
@@ -53,11 +53,7 @@
         
           <meta 
             property="og:article:tag" 
-            content="thuthuat">
-        
-          <meta 
-            property="og:article:tag" 
-            content="congnghe">
+            content="react native">
         
       
     
@@ -255,22 +251,22 @@
     <article class="card card-content">
       <header>
         <p class="post-title">
-          Tôi đã tạo blog như thế nào
+          Tạo file apk từ project React Native
         </p>
       </header>
       <div class="post-meta post-show-meta">
-        <time datetime="2021-07-14T02:54:48.768Z">
+        <time datetime="2021-07-29T08:23:49.000Z">
           <i class="iconfont icon-calendar" style="margin-right: 2px;">
           </i>
           <span>
-            2021-07-14
+            2021-07-29
           </span>
         </time>
         
                 
                   <span class="dot"></span>
                   <span>
-                    363
+                    348
                       words
                   </span>
                   
@@ -282,15 +278,8 @@
             </i>
             
               
-                  <a href="/tags/thuthuat/" class="post-meta-link">
-                    thuthuat
-                  </a>
-                  
-              
-                <span class="dot"></span>
-                
-                  <a href="/tags/congnghe/" class="post-meta-link">
-                    congnghe
+                  <a href="/tags/react-native/" class="post-meta-link">
+                    react native
                   </a>
                   
           </div>
@@ -298,16 +287,23 @@
         
           </header>
           <div id="section" class="post-content">
-            <p>Để tạo được một block như của mình thì các bạn cần làm các bước như sau:</p>
-<h1 id="1-Cai-dat-moi-truong"><a href="#1-Cai-dat-moi-truong" class="headerlink" title="1. Cài đặt môi trường"></a>1. Cài đặt môi trường</h1><p>Các bạn truy cập vào trang <a target="_blank" rel="noopener" href="https://nodejs.org/en/">Nodejs</a> và tiến hành tải file cài đặt tương ứng với từng hệ điều hành của các bạn, ở đây mình dùng Windows nên sẽ tải bản dành cho Windows như hình dưới.</p>
-<p><img src="/2021/07/14/toi-da-tao-blog-nhu-the-nao-p1/nodejs.JPG" alt="Trang chủ Nodejs" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/2021/07/14/toi-da-tao-blog-nhu-the-nao-p1/nodejs.JPG" class="lozad post-image"></p>
-<p>Sau khi cài đặt xong Nodejs, chúng ta đã có thể sử dụng lệnh <strong>npm</strong> trong <strong>Command Prompt</strong>, truy cập vào trang chủ <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> để lấy lệnh cài đặt, mở <strong>Command Prompt</strong> lên và tiến hành dán lệnh <code>npm install hexo-cli -g</code> như hình dưới vào rồi ấn <strong>Enter</strong> để cài đặt.</p>
-<p><img src="/2021/07/14/toi-da-tao-blog-nhu-the-nao-p1/hexo.JPG" alt="Trang chủ Hexo" srcset="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20300'%3E%3C/svg%3E" data-src="/2021/07/14/toi-da-tao-blog-nhu-the-nao-p1/hexo.JPG" class="lozad post-image"></p>
-<p>Giờ đây chúng ta đã đủ công cụ để có thể tạo được một blog cho riêng mình rồi, cụ thể cách tạo blog sẽ được nêu ra trong mục tiếp theo.</p>
-<h1 id="2-Mot-so-lenh-de-tien-hanh-tao-web-blog"><a href="#2-Mot-so-lenh-de-tien-hanh-tao-web-blog" class="headerlink" title="2. Một số lệnh để tiến hành tạo web blog"></a>2. Một số lệnh để tiến hành tạo web blog</h1><p>Dùng lệnh <code>hexo init ten-blog</code> để khởi tạo trang blog.</p>
-<p>Dùng lệnh <code>hexo new ten-post</code> để tạo một post mới, rồi ta có thể tiến hành sửa một vài thông tin trong post đó trên trình chỉnh sửa để thấy sự thay đổi, toàn bộ nội dùng post được viết bằng markdown.</p>
-<p>Cuối cùng, chạy chương trình dùng lệnh <code>hexo server</code>, ta nhập link <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000</a> vào trình duyệt để xem kết quả.</p>
-<p><strong>Kết luận:</strong> Như vậy bạn đã có một blog riêng cho bản thân mình thỏa thích viết lách, chém gió rồi :v</p>
+            <p>Để sinh được file apk từ project React Native ta làm theo các bước sau đây:</p>
+<h1 id="1-Tao-file-my-upload-key-keystore"><a href="#1-Tao-file-my-upload-key-keystore" class="headerlink" title="1. Tạo file my-upload-key.keystore"></a>1. Tạo file my-upload-key.keystore</h1><p>Mở <strong>Command Prompt</strong> với quyền <strong>Administrator</strong> trong một thư mục bất kỳ. Tiếp đến, ta thực hiện copy lệnh sau:</p>
+<blockquote>
+<p>keytool -genkeypair -v -storetype PKCS12 -keystore my-upload-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000</p>
+</blockquote>
+<p>Rồi paste vào <strong>Command Prompt</strong> và ấn <strong>Enter</strong>. Tiến hành điền một số thông tin mà nó yêu cầu. Khi này ta nhận được 1 file có tên là <code>my-upload-key.keystore</code> trong thư mục vừa rồi.</p>
+<h1 id="2-Dung-file-my-upload-key-keystore"><a href="#2-Dung-file-my-upload-key-keystore" class="headerlink" title="2. Dùng file my-upload-key.keystore"></a>2. Dùng file my-upload-key.keystore</h1><p>Copy file <code>my-upload-key.keystore</code> vào thư mục <strong>[project của bạn]/android/app/</strong></p>
+<h1 id="3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties"><a href="#3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties" class="headerlink" title="3. Thêm code sau vào file [project của bạn]/android/gradle.properties"></a>3. Thêm code sau vào file [project của bạn]/android/gradle.properties</h1><pre class="highlight"><span class="line">MYAPP_UPLOAD_STORE_FILE=my-upload-key.keystore</span><br><span class="line">MYAPP_UPLOAD_KEY_ALIAS=my-key-alias</span><br><span class="line">MYAPP_UPLOAD_STORE_PASSWORD=***** // Mật khẩu nhập khi tạo file .keystore</span><br><span class="line">MYAPP_UPLOAD_KEY_PASSWORD=***** // Mật khẩu nhập khi tạo file .keystore</span><br></pre>
+
+<h1 id="4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><a href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky" class="headerlink" title="4. Sửa file [project của bạn]/android/app/build.gradle và thêm thiết lập chữ ký"></a>4. Sửa file [project của bạn]/android/app/build.gradle và thêm thiết lập chữ ký</h1><p>Tiến hành thêm các phần code dưới đây vào file <strong>[project của bạn]/android/app/build.gradle</strong> để được giống như sau:</p>
+<pre class="highlight"><span class="line">...</span><br><span class="line">android &#123;</span><br><span class="line">    ...</span><br><span class="line">    defaultConfig &#123; ... &#125;</span><br><span class="line">    signingConfigs &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            if (project.hasProperty(&#x27;MYAPP_UPLOAD_STORE_FILE&#x27;)) &#123;</span><br><span class="line">                storeFile file(MYAPP_UPLOAD_STORE_FILE)</span><br><span class="line">                storePassword MYAPP_UPLOAD_STORE_PASSWORD</span><br><span class="line">                keyAlias MYAPP_UPLOAD_KEY_ALIAS</span><br><span class="line">                keyPassword MYAPP_UPLOAD_KEY_PASSWORD</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        release &#123;</span><br><span class="line">            ...</span><br><span class="line">            signingConfig signingConfigs.release</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">...</span><br></pre>
+
+<h1 id="5-Tien-hanh-tao-file-apk"><a href="#5-Tien-hanh-tao-file-apk" class="headerlink" title="5. Tiến hành tạo file .apk"></a>5. Tiến hành tạo file .apk</h1><p>Thực hiện câu lệnh sau trong thư mục project của bạn:</p>
+<blockquote>
+<p>cd android &amp;&amp; ./gradlew bundleRelease</p>
+</blockquote>
+<p>Và cuối cùng bạn đã sinh được ra file <strong>.apk</strong>, file này được đặt ở trong thư mục sau: <strong>android/app/build/outputs/bundle/release/</strong></p>
 
           </div>
           <!-- <div>
@@ -321,8 +317,8 @@
                 </p>
                 <p>
                   <span style="font-weight: bold;">文章链接：</span><a target="_blank" rel="nofollow noopener noreferrer"
-                    href="http://example.com/2021/07/14/toi-da-tao-blog-nhu-the-nao-p1/">
-                    http://example.com/2021/07/14/toi-da-tao-blog-nhu-the-nao-p1/
+                    href="http://example.com/2021/07/29/tao-file-apk-tu-project-react-native/">
+                    http://example.com/2021/07/29/tao-file-apk-tu-project-react-native/
                   </a>
                 </p>
                 <p><span style="font-weight: bold;">版权声明：</span>
@@ -334,29 +330,15 @@
     </article>
     <div class="nav">
   
-    <div class="nav-item-prev">
-      <a 
-        href="/2021/07/29/tao-file-apk-tu-project-react-native/" 
-        class="nav-link">
-        <i class="iconfont icon-left nav-prev-icon"></i>
-        <div>
-          <div class="nav-label">Prev</div>
-          
-            <div class="nav-title">Tạo file apk từ project React Native </div>
-          
-        </div>
-      </a>
-    </div>
-  
   
     <div class="nav-item-next">
       <a 
-        href="/2021/07/14/chia-se-key-windows-office/" 
+        href="/2021/07/14/toi-da-tao-blog-nhu-the-nao-p1/" 
         class="nav-link">
         <div>
           <div class="nav-label">Next</div>
           
-            <div class="nav-title">Chia sẻ key Windows/Offices </div>
+            <div class="nav-title">Tôi đã tạo blog như thế nào </div>
           
         </div>
         <i class="iconfont icon-right nav-next-icon"></i>
@@ -372,7 +354,7 @@
     style="padding-right: 2px;">
   </i>TOC
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Cai-dat-moi-truong"><span class="toc-text">1. Cài đặt môi trường</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Mot-so-lenh-de-tien-hanh-tao-web-blog"><span class="toc-text">2. Một số lệnh để tiến hành tạo web blog</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Tao-file-my-upload-key-keystore"><span class="toc-text">1. Tạo file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Dung-file-my-upload-key-keystore"><span class="toc-text">2. Dùng file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties"><span class="toc-text">3. Thêm code sau vào file [project của bạn]&#x2F;android&#x2F;gradle.properties</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><span class="toc-text">4. Sửa file [project của bạn]&#x2F;android&#x2F;app&#x2F;build.gradle và thêm thiết lập chữ ký</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Tien-hanh-tao-file-apk"><span class="toc-text">5. Tiến hành tạo file .apk</span></a></li></ol>
           </div>
                     </main>
                     <aside class="left-column">
@@ -420,7 +402,7 @@
     style="padding-right: 2px;">
   </i>TOC
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Cai-dat-moi-truong"><span class="toc-text">1. Cài đặt môi trường</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Mot-so-lenh-de-tien-hanh-tao-web-blog"><span class="toc-text">2. Một số lệnh để tiến hành tạo web blog</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Tao-file-my-upload-key-keystore"><span class="toc-text">1. Tạo file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Dung-file-my-upload-key-keystore"><span class="toc-text">2. Dùng file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties"><span class="toc-text">3. Thêm code sau vào file [project của bạn]&#x2F;android&#x2F;gradle.properties</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><span class="toc-text">4. Sửa file [project của bạn]&#x2F;android&#x2F;app&#x2F;build.gradle và thêm thiết lập chữ ký</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Tien-hanh-tao-file-apk"><span class="toc-text">5. Tiến hành tạo file .apk</span></a></li></ol>
       </div>
     </article>
   
@@ -485,7 +467,7 @@
     style="padding-right: 2px;">
   </i>TOC
 </div>
-<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Cai-dat-moi-truong"><span class="toc-text">1. Cài đặt môi trường</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Mot-so-lenh-de-tien-hanh-tao-web-blog"><span class="toc-text">2. Một số lệnh để tiến hành tạo web blog</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Tao-file-my-upload-key-keystore"><span class="toc-text">1. Tạo file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Dung-file-my-upload-key-keystore"><span class="toc-text">2. Dùng file my-upload-key.keystore</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Them-code-sau-vao-file-project-cua-ban-android-gradle-properties"><span class="toc-text">3. Thêm code sau vào file [project của bạn]&#x2F;android&#x2F;gradle.properties</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Sua-file-project-cua-ban-android-app-build-gradle-va-them-thiet-lap-chu-ky"><span class="toc-text">4. Sửa file [project của bạn]&#x2F;android&#x2F;app&#x2F;build.gradle và thêm thiết lập chữ ký</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Tien-hanh-tao-file-apk"><span class="toc-text">5. Tiến hành tạo file .apk</span></a></li></ol>
     </article>
   
   
